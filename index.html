@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Barra de navegación -->
+  <!-- barra de navegación -->
   <header class="navbar">
     <div class="logo">Shine Masters</div>
     <nav>
@@ -36,14 +36,14 @@
 
  
 
-<!-- Productos -->
+<!-- seccion de prodcutos -->
 <section id="productos" class="productos-section">
   <h2 class="productos-titulo">Nuestros Productos</h2>
 
-  <!-- Sección Hombres -->
+  <!-- sseccion de hombres -->
   <h3 class="categoria-titulo">Sección Hombres</h3>
   <div class="productos-grid">
-    <!-- 5 con efecto flip -->
+    <!-- crtas con giro  -->
     <div class="card flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <!-- 5 sin efecto flip -->
+    <!-- cartas sin giro-->
     <div class="card"><img src="imagenes/imagen11.jpeg" alt=""><h4>Modelo Titan</h4><p class="precio">$84.00</p></div>
     <div class="card"><img src="imagenes/imagen12.jpg" alt=""><h4>Modelo Aero</h4><p class="precio">$70.00</p></div>
     <div class="card"><img src="imagenes/imagen016.jpg" alt=""><h4>Modelo Terra</h4><p class="precio">$78.00</p></div>
@@ -117,10 +117,10 @@
     <div class="card"><img src="imagenes/imagen20.jpg" alt=""><h4>Modelo MetroRun</h4><p class="precio">$82.50</p></div>
   </div>
 
-  <!-- Sección Mujeres -->
+  <!-- categoria de mujeres -->
   <h3 class="categoria-titulo">Sección Mujeres</h3>
   <div class="productos-grid">
-    <!-- 5 con flip -->
+    <!-- cartas con giro -->
     <div class="card flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -168,7 +168,7 @@
           <p class="precio">$99.00</p>
         </div>
         <div class="flip-card-back">
-          <p>Perfecto para combinar con atuendos formales o casuales.</p>
+          <p>Perfecto para combinar con atuendos casuales en tu dia a.</p>
         </div>
       </div>
     </div>
@@ -186,7 +186,7 @@
       </div>
     </div>
 
-    <!-- 5 sin flip -->
+    <!-- cartas sin giro -->
     <div class="card"><img src="imagenes/imagen23.jpeg" alt=""><h4>Modelo Shine</h4><p class="precio">$84.00</p></div>
     <div class="card"><img src="imagenes/imagen24.jpeg" alt=""><h4>Modelo Aurora</h4><p class="precio">$70.00</p></div>
     <div class="card"><img src="imagenes/imagen25.jpeg" alt=""><h4>Modelo Luna</h4><p class="precio">$78.00</p></div>
@@ -194,14 +194,14 @@
     <div class="card"><img src="imagenes/imagen27.jpg" alt=""><h4>Modelo Star</h4><p class="precio">$82.50</p></div>
   </div>
 
-  <!-- Sección Accesorios -->
+  <!-- secion de accesorios de zapateria -->
   <h3 class="categoria-titulo">Accesorios de Zapatería</h3>
   <div class="productos-grid">
-    <div class="card"><img src="imagenes/imagen28.jpeg" alt=""><h4>Plantillas MemoryFoam</h4><p class="precio">$15.00</p></div>
-    <div class="card"><img src="imagenes/imagen29.jpeg" alt=""><h4>Kit de Limpieza ShinePro</h4><p class="precio">$25.00</p></div>
-    <div class="card"><img src="imagenes/imagen30.jpeg" alt=""><h4>Cordones Premium</h4><p class="precio">$10.00</p></div>
-    <div class="card"><img src="imagenes/imagen31.jpg" alt=""><h4>Bolsa Protectora</h4><p class="precio">$8.00</p></div>
-    <div class="card"><img src="imagenes/imagen32.jpg" alt=""><h4>Spray Impermeabilizante</h4><p class="precio">$12.50</p></div>
+    <div class="card"><img src="imagenes/imagen28.jpeg" alt=""><h4>Plantillas MemoryFoam</h4><p class="precio">$10.00</p></div>
+    <div class="card"><img src="imagenes/imagen29.jpeg" alt=""><h4>Pasta para Zapatos color negro</h4><p class="precio">$1.10</p></div>
+    <div class="card"><img src="imagenes/imagen30.jpeg" alt=""><h4>Cepillo para lustre </h4><p class="precio">$10.00</p></div>
+    <div class="card"><img src="imagenes/imagen31.jpg" alt=""><h4>Cordones Premium</h4><p class="precio">$0.90</p></div>
+    <div class="card"><img src="imagenes/imagen32.jpg" alt=""><h4>Pasta liquida para zapatos </h4><p class="precio">$1.50</p></div>
   </div>
 </section>
 <!-- Sección de servicios de lustrado -->
@@ -259,7 +259,7 @@
 </section>
 
 
-<!-- Sección empresa -->
+<!-- partde de sobre nosotros  -->
 <section id="empresa" class="info-section">
   <h2>Sobre Nosotros</h2>
   <div class="empresa-grid">
@@ -279,7 +279,7 @@
 </section>
 
 
-  <!-- Contacto -->
+  <!-- parte de contactanos :v -->
 <section id="contacto" class="contacto-section">
   <h2>Contáctanos</h2>
   <p>¿Tienes dudas, sugerencias o deseas más información sobre nuestros productos?  
@@ -303,11 +303,43 @@
 </section>
 
 
-  <!-- Footer -->
+  <!-- PARTDE del footer -->
   <footer>
     <p>&copy; 2025 Shine Masters. Todos los derechos reservados.</p>
   </footer>
 
   <script src="app/app.js"></script>
+    <!-- pa que funcione el boton en el carrusel-->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var logo = document.querySelector(".logo");
+    var inicio = document.querySelector("#inicio");
+
+    if (logo && inicio) {
+      logo.style.cursor = "pointer";
+      logo.addEventListener("click", function () {
+        inicio.scrollIntoView({ behavior: "smooth" });
+      });
+    } else {
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".cta");
+    const productos = document.querySelector("#productos");
+
+    if (btn && productos) {
+      btn.addEventListener("click", () => {
+        productos.scrollIntoView({ behavior: "smooth" });
+      });
+    } else {
+      console.warn("No se encontró el botón o la sección de productos.");
+    }
+  });
+</script>
+
+
 </body>
 </html>

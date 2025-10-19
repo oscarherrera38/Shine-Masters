@@ -19,18 +19,3 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-// ======== EFECTO DE APARICIÓN CON CSS DINÁMICO ========
-const style = document.createElement('style');
-style.innerHTML = `
-  section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
-  }
-  section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-document.head.appendChild(style);
